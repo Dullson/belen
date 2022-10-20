@@ -1,0 +1,14 @@
+---
+layout: default
+---
+<div class="card-collection">
+    {% for entry in site.portfolio %}
+    {% if entry.tag == page.category %}
+    <div class="card">
+        <a href="{% link {{ entry.path }} %}">
+            <img src="{{ entry.images[0] }}" alt="test">
+        </a>
+    </div>
+    {% endif %}
+    {% endfor %}
+</div>
