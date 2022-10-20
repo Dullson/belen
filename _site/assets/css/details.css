@@ -1,0 +1,23 @@
+img {
+    width: 100%;
+}
+
+.details-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    gap: 50px;
+}
+
+.details-container > .images {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 500px;
+}
+
+.details-container > .content {
+    top: 0px;
+    position: sticky;
+}
