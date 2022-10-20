@@ -6,7 +6,10 @@ layout: default
     {% if entry.tag == page.category %}
     <div class="card">
         <a href="{% link {{ entry.path }} %}"git>
-            <img src="{{ entry.images[0] }}" alt="test">
+            <!-- <img src="{{ entry.images[0] }}" alt="test"> -->
+            {% responsive_image_block %}
+            path: {{ entry.images[0] }}
+            {% endresponsive_image_block %}
         </a>
     </div>
     {% endif %}

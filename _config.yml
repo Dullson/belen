@@ -1,4 +1,4 @@
-baseurl: /belen/
+# baseurl: /belen
 collections:
   portfolio:
     layout: details.html
@@ -19,3 +19,11 @@ defaults:
 exclude:
   - serve.sh
   - _portfolio/example.md
+plugins:
+  - jekyll-responsive-image
+responsive_image:
+  template: _includes/responsive-image.html
+  sizes:
+    - width: 320
+    - width: 480
+    - width: 800
