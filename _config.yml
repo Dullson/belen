@@ -1,4 +1,4 @@
-baseurl: "/belen"
+baseurl: /belen/
 collections:
   portfolio:
     layout: details.html

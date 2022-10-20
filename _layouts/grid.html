@@ -5,7 +5,7 @@ layout: default
     {% for entry in site.portfolio %}
     {% if entry.tag == page.category %}
     <div class="card">
-        <a href="{% link {{ entry.path | relative_url }} %}">
+        <a href="{% link {{ entry.path }} %}"git>
             <img src="{{ entry.images[0] }}" alt="test">
         </a>
     </div>
