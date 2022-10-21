@@ -1,0 +1,18 @@
+.about {
+    display: flex;
+    flex-direction: row-reverse;    
+    align-items: center;
+    justify-content: center;
+}
+
+.about > .description {
+    width: 50%;
+}
+
+.about > .photo {
+    height: 70vh;
+}
+
+.photo > img {
+    height: 100%;
+}

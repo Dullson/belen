@@ -8,13 +8,15 @@ img {
     flex-wrap: wrap-reverse;
     justify-content: center;
     gap: 50px;
+    flex-grow: 1;
 }
 
 .details-container > .images {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    width: 500px;
+    min-width: 550px;
+    flex: 2;
 }
 
 .details-container > .content {
