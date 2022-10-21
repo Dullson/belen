@@ -6,10 +6,7 @@ layout: default
 <div class="details-container">
     <div class="images">
         {% for image in page.images %}
-        <!-- <img src="{{image | relative_url}}" alt=""> -->
-        {% responsive_image_block %}
-        path: {{image}}
-        {% endresponsive_image_block %}
+        <img src="{{image | relative_url}}" alt="">
         {% endfor %}
     </div>
     <div class="content">
