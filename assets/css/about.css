@@ -1,12 +1,15 @@
 .about {
     display: flex;
-    flex-direction: row-reverse;    
+    flex-direction: reverse;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }
 
 .about > .description {
-    width: 50%;
+    padding: 10px;
+    max-width: min(400px, 100%);
+    min-width: 400px;
 }
 
 .about > .photo {

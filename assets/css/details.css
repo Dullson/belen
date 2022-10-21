@@ -5,10 +5,11 @@ img {
 .details-container {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap-reverse;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 50px;
     flex-grow: 1;
+    position: relative;
 }
 
 .details-container > .images {
@@ -22,4 +23,5 @@ img {
 .details-container > .content {
     top: 0px;
     position: sticky;
+    height: fit-content;
 }

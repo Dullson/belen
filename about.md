@@ -4,7 +4,7 @@ image: /assets/img/belbigw.png
 ---
 
 # Belen sprgl
-*illüstratör, çizer, kitap falan*
+**illüstratör, çizer, kitap falan**
 
 - varan1
 - varan2

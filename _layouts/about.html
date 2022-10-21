@@ -4,10 +4,10 @@ layout: default
 <link rel="stylesheet" href='{{ "/assets/css/about.css" | relative_url }}'>
 
 <div class="about">
+    <div class="description">
+        {{ content }}
+    </div>
     <div class="photo">
         <img src="{{page.image | relative_url }}" alt="">
     </div>
-<div class="description">
-    {{ content }}
-</div>
 </div>

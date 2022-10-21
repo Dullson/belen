@@ -1,4 +1,107 @@
 ---
 ---
 
-@import "main";
+// body {
+//   background: $backgroundColor;
+//   color: $bodyColor;
+//   font-family: $bodyFont;
+// }
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: rgb(255, 255, 255);
+    --text-color: rgb(2, 2, 2);
+    --bg-trans: rgba(125, 125, 125, 0);
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Quicksand', sans-serif;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    padding-left: calc(100vw - 100%);
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    min-height: 100vh;
+}
+
+.page-content {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    min-width: 50vw;
+    max-width: 960px;
+}
+
+.card-collection {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(auto, 300px));
+    width: 100%;
+    justify-content: center;
+    gap: 10px;
+    padding: 0px;
+}
+
+.card {
+    background-color: var(--bg-trans);
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: 10px;
+    // opacity: 0;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.header,
+.footer {
+    background-color: var(--bg-trans);
+    width: 100%;
+    padding: 10px;
+    color: var(--text-color);
+    font-size: 20pt;
+    // font-weight: bold;
+    font-family: "Loved by the King", cursive;
+    letter-spacing: 5px;
+}
+
+.footer {
+    text-align: center;
+    font-variant: small-caps;
+}
+
+.header {
+    display: flex;
+    align-items: baseline;
+}
+
+.header>#logo {
+    font-size: 30pt;
+}
+
+.header>#nav {
+    margin-left: auto;
+}
+
+.header>#nav>span {
+    white-space: nowrap;
+    word-spacing: -0.3em;
+    margin-left: 0.5em;
+}
+
+.header>#nav a {
+    text-decoration: none;
+    color: var(--text-color);
+}
