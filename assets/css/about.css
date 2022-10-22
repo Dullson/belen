@@ -8,14 +8,15 @@
 
 .about > .description {
     padding: 10px;
-    max-width: min(400px, 100%);
-    min-width: 400px;
+    max-width: min(450px, 100%);
+    min-width: 390px;
 }
 
 .about > .photo {
     height: 70vh;
+    max-width: min(450px, 100%);
 }
 
 .photo > img {
-    height: 100%;
+    width: 100%;
 }
