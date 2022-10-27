@@ -16,7 +16,7 @@ img {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    min-width: 550px;
+    min-width: min(550px, 100%);
     flex: 2;
 }
 
@@ -24,4 +24,5 @@ img {
     top: 0px;
     position: sticky;
     height: fit-content;
+    width: min(300px, 100%);
 }
